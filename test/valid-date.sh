@@ -59,7 +59,7 @@ fi
 
 # Normalize date and store the return value to check for errors.
 
-newdate="$($normdate "$@")"
+newdate=`./normdate "$@" `
 
 if [ $? -eq 1 ] ; then
   exit 1        # Error condition already reported by normdate
